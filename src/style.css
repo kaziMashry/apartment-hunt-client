@@ -1,0 +1,157 @@
+.btn-brand {
+  background-color: #275A53;
+  color: white;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.text-brand {
+  color: #275A53;
+}
+
+a {
+  color: black;
+}
+
+.header-img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: relative;
+  top: -400px;
+  width: 100vw;
+}
+
+input {
+  width: 400px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.formPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10vh;
+}
+
+.formContainer {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.errorText {
+  color: red;
+}
+
+.signinForm {
+  padding: 5vh 10vw;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-wrap: wrap; */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signInInput {
+  width: 100%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  /* border-bottom-style: 1px solid yellow; */
+  background-color: #fff;
+  padding-left: 0.1vw;
+}
+
+.signInInput:focus {
+  outline: none;
+}
+
+.fireAuth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid lightgray;
+  width: auto;
+  margin-top: 2vh;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.fireAuth:hover {
+  background-color: lightgray;
+}
+
+.authLogo {
+  width: 20%;
+  margin-right: 2vw;
+}
+
+.authTitle {
+  padding: 0;
+  margin-right: 3vw;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

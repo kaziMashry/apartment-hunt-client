@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Login from './Components/Authentication/Login';
+import Signup from './Components/Authentication/Signup';
+import Dashboard from './Components/Dashboard/Dashboard';
+import Home from './Components/Home/Home';
+import './style.css';
+
+export const userContext = React.createContext();
 
 function App() {
+  if (sessionStorage.getItem('user') === null) sessionStorage.setItem('user', JSON.stringify({}));
+  if (sessionStorage.getItem('services') === null) sessionStorage.setItem('services', JSON.stringify([]));
+
+  const [loggedinUser, setLoggedinUser] = React.useState(JSON.parse(sessionStorage.user));
+  const [services, setServices] = React.useState(JSON.parse(sessionStorage.services));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <userContext.Provider value={[loggedinUser, setLoggedinUser]}>
+      <BrowserRouter>
+        <Switch>
+
+          <Route exact path='/'>
+            <Home />
+          </Route>
+
+          <Route path='/dashboard'>
+            <Dashboard />
+          </Route>
+
+          <Route path='/login'>
+            <Login />
+          </Route>
+
+          <Route path='/signup'>
+            <Signup />
+          </Route>
+
+        </Switch>
+      </BrowserRouter>
+    </userContext.Provider>
   );
 }
 

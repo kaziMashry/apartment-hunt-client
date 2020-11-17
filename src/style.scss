@@ -1,0 +1,116 @@
+$brand-color: #275A53;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-brand{
+    background-color: $brand-color;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.text-brand{
+    color: $brand-color;
+}
+
+a{
+    color: black;
+}
+
+.header-img{
+    filter: brightness(30%); 
+}
+
+.header-top{
+    @include flex-center();
+    color: white;
+    position: relative;
+    top: -400px;
+    width: 100vw;
+}
+
+input{
+    width: 400px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.formPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10vh;
+  }
+  
+  .formContainer{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .errorText{
+    color: red;
+  }
+  
+  .signinForm{
+    padding: 5vh 10vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .signInInput{
+    width: 100%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    /* border-bottom-style: 1px solid yellow; */
+    background-color: #fff;
+    padding-left: 0.1vw;
+  }
+  
+  .signInInput:focus {
+    outline: none;
+  }
+  .fireAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    width: auto;
+    margin-top: 2vh;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .fireAuth:hover{
+    background-color: lightgray;
+  }
+  
+  .authLogo{
+    width: 20%;
+    margin-right: 2vw;
+  }
+  
+  .authTitle{
+    padding: 0 ;
+    margin-right: 3vw;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
